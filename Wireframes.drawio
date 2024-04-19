@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-04-19T00:07:08.567Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="DbGfsSEM84YtzyYnFb9B" version="23.1.5" type="github">
+<mxfile host="app.diagrams.net" modified="2024-04-19T01:34:55.178Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36" etag="XvqH1Q4wD2JePtTfbWEw" version="23.1.5" type="github">
   <diagram name="Page-1" id="rM3vWbZLElF_DfZPS8z-">
-    <mxGraphModel dx="1990" dy="704" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1204" dy="219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -457,6 +457,12 @@
         </mxCell>
         <mxCell id="iL6ysjgsh68Y96Oe1kEA-152" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Pick up groceries&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeColor=none;fillColor=#F7ECDE;" vertex="1" parent="1">
           <mxGeometry x="34.5" y="490" width="101" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="iL6ysjgsh68Y96Oe1kEA-153" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="72.56" y="810" width="10" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="iL6ysjgsh68Y96Oe1kEA-154" value="Add tasks" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="92.28" y="799.5" width="127.44" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
