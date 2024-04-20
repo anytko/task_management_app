@@ -1,6 +1,7 @@
 // AddTaskComponent.jsx
 import React, { useState } from 'react';
 import { CloseButton } from 'react-bootstrap';
+import '../components/task_list.css'
 
 function AddTaskComponent({ onTaskAdd, onClose}) {
     const [taskName, setTaskName] = useState('');
@@ -15,8 +16,13 @@ function AddTaskComponent({ onTaskAdd, onClose}) {
 
     return (
         <div>
-            <h3>Add Task</h3>
-            <CloseButton onClick={onClose} className="close-btn" />
+            <div className='title_x'>
+            <h3>Add Task </h3>
+            <CloseButton onClick={onClose} className="close-btn">
+            <span className='x_span' aria-hidden="true">X</span>
+            </CloseButton>
+            </div>
+
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="taskName">Task Name:</label>

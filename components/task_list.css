@@ -31,5 +31,20 @@
 }
 
 .close-btn{
-    background-color: red;
+    background-color: white;
+    border-color: black;
+}
+
+.big_task .close-btn{
+    justify-content: right;
+}
+
+.title_x{
+    display:flex;
+    justify-content: center; /* Add space between elements */
+    align-items: center;
+}
+
+.title_x .close-btn{
+    margin-left: 0.75rem;;
 }

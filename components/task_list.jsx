@@ -40,9 +40,13 @@ function TaskList({ date, onClose}) {
 
     return (
         <>
-            <div>
-                <h2 className="task_list_title">Today's Task List</h2>
-                <CloseButton onClick={onClose} className="close-btn" />
+            <div className='big_task"'>
+            <CloseButton onClick={onClose} className="close-btn">
+            <span className='x_span' aria-hidden="true">X</span>
+            </CloseButton>
+                <h2 className="task_list_title">Today's Task List
+                </h2>
+                
                 <h3 className="current_tasks">Current Tasks:</h3>
                 <ul className="task-list">
                     {incompleteTasks.map((task, index) => (
@@ -83,4 +87,3 @@ function TaskList({ date, onClose}) {
 }
 
 export default TaskList;
-
