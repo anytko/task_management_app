@@ -16,3 +16,16 @@
   .task-list li input[type="checkbox"] {
     margin-right: 10%; /* Add some space between checkbox and text */
   }
+
+.current_tasks{
+    text-align: left;
+}
+
+.past_tasks{
+    text-align: left;
+}
+
+
+.strikeout{
+    text-decoration: line-through !important;
+}
