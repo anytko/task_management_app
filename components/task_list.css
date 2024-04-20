@@ -33,6 +33,7 @@
 .close-btn{
     background-color: white;
     border-color: black;
+    border-radius: 50%;
 }
 
 .big_task .close-btn{
@@ -47,4 +48,6 @@
 
 .title_x .close-btn{
     margin-left: 0.75rem;;
+    border-radius: 50%;
 }
+

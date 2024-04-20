@@ -5,6 +5,7 @@ import Calendar from 'react-calendar'
 import AddTaskComponent from '../components/add_task.jsx'
 import TaskList from '../components/task_list.jsx'
 import '../components/calendar.css';
+import NavBar from '../components/nav_bar.jsx';
 
 
 
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <div className="app">
+      <NavBar/>
       <div className="calendar-container">
         <Calendar onChange={handleDateChange} value={date} />
       </div>

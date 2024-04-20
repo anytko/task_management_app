@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0e1818;
+    padding: 1rem;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0.1rem;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end; /* Align links to the right */
+    margin-right: 2rem;
+}
+
+.navbar ul li {
+    margin-left: 1rem; /* Add space between links */
+}
+
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.navbar ul li a {
+    color: #fff; /* Default link color */
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Adjust padding for the pill effect */
+    border-radius: 1rem; /* Rounded corners */
+    border: 1px solid #ccc; /* Border for the pill effect */
+}
+
+.navbar ul li a:hover {
+    background-color: #FFF; /* Background color on hover */
+    color: black;
+}
+
+.navbar ul li a.active {
+    background-color: #FFF; /* Active link background color */
+    color: black; /* Active link text color */
+    border-color: #828282; /* Active link border color */
+}
