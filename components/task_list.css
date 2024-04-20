@@ -25,7 +25,7 @@
     text-align: left;
 }
 
-
-.strikeout{
-    text-decoration: line-through !important;
+.delete_button{
+    margin-left: 10%;
+    font-size: 16px;
 }

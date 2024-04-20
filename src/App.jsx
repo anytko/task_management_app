@@ -8,6 +8,7 @@ import '../components/calendar.css';
 
 
 
+
 function App() {
   const [date, setDate] = useState(new Date());
   const [showTaskList, setShowTaskList] = useState(false);
@@ -29,6 +30,7 @@ function App() {
       </div>
       {/* Render TaskList only if showTaskList is true */}
       {showTaskList && <TaskList date={date} taskNames={taskNames} onAddTask={() => setShowTaskList(true)} />}
+ 
       {/* Pass date and handleTaskAdd function to AddTaskComponent */}
     </div>
   );

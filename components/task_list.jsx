@@ -22,12 +22,19 @@ function TaskList({ date }) {
         setTasks(newTasks);
     };
 
+    const handleDeleteTask = (index) => {
+        const newTasks = [...completedTasks];
+        newTasks.splice(index, 1);
+        setTasks(newTasks);
+    };
+
     // Filter tasks for the current date
     const tasksForDate = tasks.filter(task => task.date.toDateString() === date.toDateString());
 
     // Separate tasks by completion status
     const incompleteTasks = tasksForDate.filter(task => !task.completed);
     const completedTasks = tasksForDate.filter(task => task.completed);
+
 
     return (
         <>
@@ -43,23 +50,25 @@ function TaskList({ date }) {
                                 onChange={() => handleCheckboxChange(tasks.indexOf(task))}
                             />
                             {task.taskName}
+                            <button className="delete_button" onClick={() => handleDeleteTask(index)}>Delete</button>
                         </li>
                     ))}
                 </ul>
 
                 <h3 className="past_tasks">Past Tasks:</h3>
                 <ul className="task-list">
-                    {completedTasks.map((task, index) => (
-                        <li className="strikeout" key={index}>
-                            <input
-                                type="checkbox"
-                                checked={task.completed || false}
-                                onChange={() => handleCheckboxChange(tasks.indexOf(task))}
-                            />
-                            {task.taskName}
-                        </li>
-                    ))}
-                </ul>
+    {completedTasks.map((task, index) => (
+        <li className="strikeout" key={index}>
+            <input
+                type="checkbox"
+                checked={task.completed || false}
+                onChange={() => handleCheckboxChange(tasks.indexOf(task))}
+            />
+            {task.taskName}
+            <button className="delete_button" onClick={() => handleDeleteTask(index)}>Delete</button>
+        </li>
+    ))}
+</ul>
 
                 {/* Task list items */}
                 <button onClick={handleToggleAddTask}>Add Task</button>
@@ -71,3 +80,4 @@ function TaskList({ date }) {
 }
 
 export default TaskList;
+

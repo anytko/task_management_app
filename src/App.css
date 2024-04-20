@@ -11,7 +11,12 @@
 }
 
 
-
 .task-list-container { /* Allow the task list container to take up available space */
   margin-left: 10%; /* Add margin for spacing */
+}
+
+.calendar-container{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;
 }
