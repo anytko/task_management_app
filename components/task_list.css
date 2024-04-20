@@ -1,3 +1,18 @@
 .task_list_title {
     font-size: 40px;
 }
+
+.task-list {
+    list-style-type: none ; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+  }
+  
+  .task-list li {
+    display: flex; /* Use flexbox to align items */
+    align-items: center; /* Center items vertically */
+    font-size: 20px;
+  }
+  
+  .task-list li input[type="checkbox"] {
+    margin-right: 10%; /* Add some space between checkbox and text */
+  }
