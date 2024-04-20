@@ -1,7 +1,8 @@
 // AddTaskComponent.jsx
 import React, { useState } from 'react';
+import { CloseButton } from 'react-bootstrap';
 
-function AddTaskComponent({ onTaskAdd }) {
+function AddTaskComponent({ onTaskAdd, onClose}) {
     const [taskName, setTaskName] = useState('');
 
     const handleSubmit = (e) => {
@@ -15,6 +16,7 @@ function AddTaskComponent({ onTaskAdd }) {
     return (
         <div>
             <h3>Add Task</h3>
+            <CloseButton onClick={onClose} className="close-btn" />
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="taskName">Task Name:</label>
@@ -27,6 +29,7 @@ function AddTaskComponent({ onTaskAdd }) {
                 </div>
                 <button type="submit">Submit</button>
             </form>
+      
         </div>
     );
 }

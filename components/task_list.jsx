@@ -76,7 +76,7 @@ function TaskList({ date, onClose}) {
                 {/* Task list items */}
                 <button onClick={handleToggleAddTask}>Add Task</button>
                 {/* Render AddTaskComponent if showAddTask is true */}
-                {showAddTask && <AddTaskComponent date={date} onTaskAdd={handleAddTask} />}
+                {showAddTask && <AddTaskComponent date={date} onTaskAdd={handleAddTask} onClose={() => setShowAddTask(false)}/>}
             </div>
         </>
     );
