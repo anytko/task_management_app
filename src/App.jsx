@@ -23,14 +23,21 @@ function App() {
     setTaskNames([...taskNames, taskName]);
   };
 
+  const handleCloseTaskList = () => {
+    // Implement logic to close the TaskList component
+    // For example, you can set a state to hide the TaskList
+    setShowTaskList(false);
+};
+
   return (
     <div className="app">
       <div className="calendar-container">
         <Calendar onChange={handleDateChange} value={date} />
       </div>
       {/* Render TaskList only if showTaskList is true */}
-      {showTaskList && <TaskList date={date} taskNames={taskNames} onAddTask={() => setShowTaskList(true)} />}
- 
+      <div>
+      {showTaskList && <TaskList date={date} taskNames={taskNames} onClose={() => setShowTaskList(false)} onAddTask={() => setShowTaskList(true)} />}
+      </div>
       {/* Pass date and handleTaskAdd function to AddTaskComponent */}
     </div>
   );

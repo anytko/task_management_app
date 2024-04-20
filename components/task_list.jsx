@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './task_list.css';
 import AddTaskComponent from './add_task'; 
+import { CloseButton } from 'react-bootstrap';
 
-function TaskList({ date }) {
+function TaskList({ date, onClose}) {
     const [tasks, setTasks] = useState([]);
     const [showAddTask, setShowAddTask] = useState(false);
 
@@ -28,6 +29,7 @@ function TaskList({ date }) {
         setTasks(newTasks);
     };
 
+
     // Filter tasks for the current date
     const tasksForDate = tasks.filter(task => task.date.toDateString() === date.toDateString());
 
@@ -40,6 +42,7 @@ function TaskList({ date }) {
         <>
             <div>
                 <h2 className="task_list_title">Today's Task List</h2>
+                <CloseButton onClick={onClose} className="close-btn" />
                 <h3 className="current_tasks">Current Tasks:</h3>
                 <ul className="task-list">
                     {incompleteTasks.map((task, index) => (
