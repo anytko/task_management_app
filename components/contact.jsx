@@ -19,17 +19,13 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    // Handle form submission here
-  };
-
 
   return (
     <div className="full-page">
       <Navbar />
       <h2 className='form-title'>Contact Us</h2>
-      <form className="full-form" onSubmit={handleSubmit}>
+      <form className="full-form" action="https://formspree.io/f/mgegrzbv"
+  method="POST">
         <div className="input-group">
           <label className='form-labels' htmlFor="firstName">First Name:</label>
           <input className="input-box" type="text" name="firstName" value={form.firstName} onChange={handleChange} placeholder="First Name" />
