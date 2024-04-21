@@ -93,3 +93,7 @@
     text-align: center;
     color: black;
   }
+
+  .button-div button {
+    color: black;
+}
