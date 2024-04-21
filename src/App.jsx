@@ -27,8 +27,6 @@ function App() {
   };
 
   const handleCloseTaskList = () => {
-    // Implement logic to close the TaskList component
-    // For example, you can set a state to hide the TaskList
     setShowTaskList(false);
 };
 

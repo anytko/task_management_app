@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom'; // Import NavLink for navigation
 import Navbar from './nav_bar';
 import './contact.css'
 
