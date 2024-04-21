@@ -9,5 +9,5 @@ This component is used to visualize current and past tasks. Current tasks will h
 ### AddTask
 This component adds tasks to the TastList component. It uses a form to gather information about the new event, such as task name, time, description, and how the user feels about the event to color code the entry on the calendar. 
 
-### CheckBox
-This component functions to remove crossed-out tasks from the past tasks section and move them back, unchecked, to the current tasks section. 
+### NavBar
+This component uses HashRouter to navigate between calendar and contact form components. 
