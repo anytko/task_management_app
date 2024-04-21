@@ -37,7 +37,7 @@ return (
     <NavBar/> 
     <Routes>  
       <Route
-        path="/todos"
+        path="/"
         element={
           <div className="calendar-container">
             <Calendar onChange={handleDateChange} value={date} />
