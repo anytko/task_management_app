@@ -17,10 +17,10 @@
 
 .calendar-container{
   display: flex;
-  justify-content: center; /* Center horizontally */
   align-items: center;
   justify-content: space-between;
   gap: 5%;
   margin-top: 4rem;
+  justify-content: center; /* Center horizontally */
 }
 
