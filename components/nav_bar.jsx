@@ -1,21 +1,19 @@
 import React from 'react';
-import { HashRouter as Router, NavLink } from 'react-router-dom';
+import { Link, Router } from 'react-router-dom';
 import './nav_bar.css';
 
 function Navbar() {
     return (
-        <Router>
             <nav className="navbar">
                 <ul>
                     <li>
-                    <NavLink exact to="/" activeClassName="active">Today</NavLink>
+                    <Link to="/" activeClassName="active">Today</Link>
                     </li>
                     <li>
-                    <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+                    <Link to="/contact" activeClassName="active">Contact</Link>
                     </li>
                 </ul>
             </nav>
-        </Router>
     );
 }
 

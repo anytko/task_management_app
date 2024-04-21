@@ -6,6 +6,8 @@ import AddTaskComponent from '../components/add_task.jsx'
 import TaskList from '../components/task_list.jsx'
 import '../components/calendar.css';
 import NavBar from '../components/nav_bar.jsx';
+import ContactForm from '../components/contact.jsx';
+import {Route, Routes} from 'react-router-dom'
 
 
 
@@ -30,20 +32,24 @@ function App() {
     setShowTaskList(false);
 };
 
-  return (
-    <div className="app">
-      <NavBar/>
-      <div className="calendar-container">
-        <Calendar onChange={handleDateChange} value={date} />
-      </div>
-      {/* Render TaskList only if showTaskList is true */}
-      <div>
-      {showTaskList && <TaskList date={date} taskNames={taskNames} onClose={() => setShowTaskList(false)} onAddTask={() => setShowTaskList(true)} />}
-      </div>
-      {/* Pass date and handleTaskAdd function to AddTaskComponent */}
-    </div>
-  );
+return (
+  <div className="app">
+    <NavBar/> 
+    <Routes>  
+      <Route
+        path="/"
+        element={
+          <div className="calendar-container">
+            <Calendar onChange={handleDateChange} value={date} />
+            {/* Render TaskList only if showTaskList is true */}
+            {showTaskList && <TaskList date={date} taskNames={taskNames} onClose={handleCloseTaskList} onAddTask={() => setShowTaskList(true)} className="task-list"/>}
+          </div>
+        }
+      />
+      <Route path="/contact" element={<ContactForm />} />
+    </Routes>
+  </div>
+);
 }
 
 export default App;
-

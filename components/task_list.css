@@ -40,6 +40,10 @@
     justify-content: right;
 }
 
+.big_task{
+    margin-left: 10px;
+}
+
 .title_x{
     display:flex;
     justify-content: center; /* Add space between elements */
