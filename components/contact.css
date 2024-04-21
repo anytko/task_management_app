@@ -32,6 +32,8 @@
   
   .button-div {
     margin-top: 10px; /* adjust as needed */
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .label {

@@ -40,7 +40,7 @@ function TaskList({ date, onClose}) {
 
     return (
         <>
-            <div className='big_task"'>
+            <div className='big_task'>
             <CloseButton onClick={onClose} className="close-btn">
             <span className='x_span' aria-hidden="true">X</span>
             </CloseButton>
@@ -76,11 +76,16 @@ function TaskList({ date, onClose}) {
         </li>
     ))}
 </ul>
-
+            
                 {/* Task list items */}
                 <button onClick={handleToggleAddTask}>Add Task</button>
+
+                <div className="add_task_div">
+                    
                 {/* Render AddTaskComponent if showAddTask is true */}
                 {showAddTask && <AddTaskComponent date={date} onTaskAdd={handleAddTask} onClose={() => setShowAddTask(false)}/>}
+            </div>
+
             </div>
         </>
     );

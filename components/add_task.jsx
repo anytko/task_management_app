@@ -24,8 +24,8 @@ function AddTaskComponent({ onTaskAdd, onClose}) {
             </div>
 
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="taskName">Task Name:</label>
+                <div className='add_task_form_element'>
+                    <label className='add_task_form_label' htmlFor="taskName">Task Name:</label>
                     <input
                         type="text"
                         id="taskName"
