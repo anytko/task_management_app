@@ -1,0 +1,92 @@
+.full-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-top: 4rem;
+    height: 86%;
+    background-color: black;
+  }
+  
+  .full-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw; /* or any width you prefer */
+    height: 64vh;
+    background-color: black;
+  }
+  
+  .input-group {
+    margin-bottom: 20px; /* adjust as needed */
+    display: flex;
+    flex-direction: column; /* change to column */
+    align-items: flex-start; /* align items to the start */
+    padding: 20px;
+  }
+  
+  .input-group label {
+    margin-bottom: 5px;
+  }
+  
+  .button-div {
+    margin-top: 10px; /* adjust as needed */
+  }
+
+  .label {
+    width: 100px; /* adjust width as needed */
+    text-align: left;
+    margin-right: 10px; /* adjust as needed */
+  }
+
+  .form-labels{
+    text-align: left;
+    color: white;
+    font-size: 26px;
+  }
+
+  .form-title{
+    color: white;
+    font-size: 40px;
+
+  }
+
+  .input-box {
+    width: 100%; /* make input box full width */
+    padding: 10px; /* add padding */
+    box-sizing: border-box; /* include padding in the width */
+  }
+
+  .full-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    background-color: black;
+    overflow: auto;
+  }
+  
+  .form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: black;
+  }
+  
+  .form-labels {
+    text-align: left;
+  }
+  
+  .input-group {
+    grid-column: span 1;
+  }
+  
+  .input-box {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .button-div {
+    grid-column: span 2;
+    text-align: center;
+  }
